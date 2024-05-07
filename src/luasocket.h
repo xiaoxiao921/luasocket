@@ -18,7 +18,8 @@
 \*-------------------------------------------------------------------------*/
 #ifndef LUASOCKET_API
 #ifdef _WIN32
-#define LUASOCKET_API __declspec(dllexport)
+// #define LUASOCKET_API __declspec(dllexport)
+#define LUASOCKET_API
 #else
 #define LUASOCKET_API __attribute__ ((visibility ("default")))
 #endif
